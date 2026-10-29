@@ -77,7 +77,7 @@ class TestVarasto(unittest.TestCase):
         saatu_maara = self.varasto.ota_varastosta(9)
 
         self.assertAlmostEqual(saatu_maara, 8)
-        self.assertAlmostEqual(self.varasto.saldo, 1)
+        self.assertAlmostEqual(self.varasto.saldo, 0)
 
     def test_merkkijonoesityksessa_naytetaan_saldo_ja_vapaa_tila(self):
         self.varasto.lisaa_varastoon(8)
